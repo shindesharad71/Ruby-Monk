@@ -21,3 +21,10 @@ puts "Length of string " + my_str + " is " + my_str.length.to_s
 
 # String Interpolation
 puts "Current month is #{my_str}"
+
+# Search in a string
+str = "[Luke:] I can’t believe it. [Yoda:] That is why you fail."
+puts str.include?("Yoda")
+
+# Starts with
+puts str.start_with?("[Luke")
