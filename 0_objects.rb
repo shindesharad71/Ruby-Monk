@@ -27,4 +27,7 @@ str = "[Luke:] I can’t believe it. [Yoda:] That is why you fail."
 puts str.include?("Yoda")
 
 # Starts with
-puts str.start_with?("[Luke")
+puts str.start_with? "[Luke"
+
+# Ends with
+puts str.end_with? "fail."
