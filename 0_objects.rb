@@ -31,3 +31,11 @@ puts str.start_with? "[Luke"
 
 # Ends with
 puts str.end_with? "fail."
+
+# Find index of letter in string
+puts str.index("I")
+
+# String change case
+puts str.upcase
+puts str.downcase
+puts str.swapcase
