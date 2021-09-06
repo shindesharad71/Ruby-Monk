@@ -18,3 +18,6 @@ puts arr[1]
 # Strings
 my_str = "September"
 puts "Length of string " + my_str + " is " + my_str.length.to_s
+
+# String Interpolation
+puts "Current month is #{my_str}"
