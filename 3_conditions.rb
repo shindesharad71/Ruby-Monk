@@ -14,3 +14,8 @@ def check_number(num)
 end
 
 puts check_number(2)
+
+# Truthiness of objects in Ruby
+if 0
+    puts "Hey, 0 is considered to be a truth in Ruby" 
+end
