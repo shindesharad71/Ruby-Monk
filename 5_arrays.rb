@@ -14,5 +14,11 @@ arr << 5
 # Print array
 puts arr
 
-# Array operations
+# Array operations - Map
 puts [1, 2, 3, 4, 5].map { |i| i + 1 }
+
+# Filter
+puts [1, 2, 3, 4, 5].select { |i| i % 2 == 0 }
+
+# Delete
+puts [1, 2, 3, 4, 5].delete_if { |i| i > 2 }
