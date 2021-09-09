@@ -13,3 +13,6 @@ arr << 5
 
 # Print array
 puts arr
+
+# Array operations
+puts [1, 2, 3, 4, 5].map { |i| i + 1 }
