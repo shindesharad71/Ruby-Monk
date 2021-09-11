@@ -18,3 +18,14 @@ end
 
 # Extracting the keys and values from a Hash
 puts student_ages.keys
+
+# New way to create Hash
+
+def artax
+    a = [:punch, 0]
+    b = [:kick, 72]
+    c = [:stops_bullets_with_hands, false]
+    key_value_pairs = [a, b, c]
+    Hash[key_value_pairs]
+end
+p artax
