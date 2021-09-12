@@ -25,3 +25,8 @@ end
 # Invoking it
 puts Gym.new.push_ups
 puts Dojo.new.push_ups
+
+# Types
+puts WarmUp.class      # Module
+puts Class.superclass   # Module
+puts Module.superclass  # Object
