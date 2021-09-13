@@ -8,3 +8,11 @@ io_streams = Array.new
 ObjectSpace.each_object(IO) { |x| io_streams << x }
 p io_streams
 
+# File Read and Write
+who_am_i = File.open("new-fd.txt", "w") do | file |
+    file.puts "Call me Sharad"
+end
+
+p who_am_i
+
+File.open("new-fd.txt", "r") { | file | puts file.read }
