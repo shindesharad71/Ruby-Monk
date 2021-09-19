@@ -12,3 +12,7 @@ puts (
     Object.instance_methods - 
     Numeric.instance_methods
 ).count
+
+# The Class Inheritance Example
+class MyArray < Array
+end
