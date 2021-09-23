@@ -14,3 +14,11 @@ class Item
 end
 
 Item.new("silence").show
+
+class Item
+    def self.show
+      puts "Class method show invoked"
+    end  
+  end
+  
+  Item.show
