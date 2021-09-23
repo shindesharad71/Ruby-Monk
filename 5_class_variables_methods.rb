@@ -19,6 +19,14 @@ class Item
     def self.show
       puts "Class method show invoked"
     end  
-  end
-  
+end
+
   Item.show
+
+class Item
+    class << self
+      def show
+        puts "Class method show invoked"
+      end
+    end
+end
