@@ -30,3 +30,20 @@ class Item
       end
     end
 end
+
+class Planet
+  @@planets_count = 0
+    
+  def initialize(name)
+    @name = name
+    @@planets_count += 1
+  end
+  
+  def self.planets_count
+    @@planets_count
+  end  
+end
+
+Planet.new("earth"); Planet.new("uranus")
+
+p Planet.planets_count
