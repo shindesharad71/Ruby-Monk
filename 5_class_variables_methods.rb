@@ -47,3 +47,21 @@ end
 Planet.new("earth"); Planet.new("uranus")
 
 p Planet.planets_count
+
+
+class ApplicationConfiguration
+  @@configuration = {}
+
+  def self.set(property_name, value)
+    @@configuration[property_name] = value
+  end
+  
+  def self.get(property_name)
+    @@configuration[property_name]
+  end  
+end
+
+ApplicationConfiguration.set("name", "Demo Application")
+ApplicationConfiguration.set("version", "0.1")
+
+p ApplicationConfiguration.get("version")
