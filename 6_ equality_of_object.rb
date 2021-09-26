@@ -1,6 +1,5 @@
 puts [1,2] == [1,2]
 puts [1,2] == [1,3]
-
 puts "a" == "xyz"
 
 class Item
@@ -9,7 +8,6 @@ class Item
         @qty = qty
     end
 end
-
 p Item.new("abcd",1)  == Item.new("abcd",1)
 
 class Item
