@@ -40,7 +40,6 @@ class Item
         "Item (#{@item_name}, #{@qty})"
     end
     def ==(other_item)
-      # your code here
     end
 end
 
