@@ -1,6 +1,6 @@
 # Print class of any object
 puts 1.class
-puts "".class
+puts ''.class
 puts [].class
 
 # Validate class
@@ -12,19 +12,19 @@ Object.new
 
 # Creating Own Classes
 class Rectangle
-    # Code related to class
+  # Code related to class
 
-    # Constructor
-    def initialize(length, breadth)
-        @length = length
-        @breadth = breadth
-    end
+  # Constructor
+  def initialize(length, breadth)
+    @length = length
+    @breadth = breadth
+  end
 
-    def perimeter
-        2 * (@length + @breadth)
-    end
+  def perimeter
+    2 * (@length + @breadth)
+  end
 
-    def area
-        @length * @breadth
-    end
+  def area
+    @length * @breadth
+  end
 end

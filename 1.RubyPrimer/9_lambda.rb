@@ -1,15 +1,15 @@
 # Sample lambda function
-l = lambda { "Do or do not" }
+l = -> { 'Do or do not' }
 puts l.call
 
 l = lambda do |string|
-    if string == "try"
-        return "There's no such thing" 
-    else
-        return "Do or do not."
-    end
+  if string == 'try'
+    return "There's no such thing"
+  else
+    return 'Do or do not.'
+  end
 end
-puts l.call("try")
+puts l.call('try')
 
-Increment = lambda { |number|  number + 1 } 
+Increment = ->(number) { number + 1 }
 puts Increment.call(3)

@@ -1,7 +1,7 @@
-puts lambda {}
-puts Proc.new {}
+puts -> {}
+puts proc {}
 
 def a_method
-    Proc.new { return "we just returned from the block" }.call
-    return "we just returned from the calling method"
+  proc { return 'we just returned from the block' }.call
+  'we just returned from the calling method'
 end
