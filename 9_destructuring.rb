@@ -7,3 +7,32 @@ life = array.at(1)
 
 puts zen
 puts life
+
+zen, john = [[4, 8], [3, 16], [23, 42, 15]]
+
+p zen
+p john
+
+def zen
+  [42, true]
+end
+
+x, y = zen
+
+puts x
+puts y
+
+[[1, 2, 3, 4], [42, 43]].each { |a, b| puts "#{a} #{b}" }
+
+[[1, 2, 3, 4], [42, 43]].each do |element|
+  a, b = element
+  puts "#{a} #{b}"
+end
+
+def compute(ary)
+  return nil unless ary
+  ary.map { |(a, b)| !b.nil? ? a + b : a }
+end
+
+ary = [[4, 8], [15, 16], [23, 42]]
+puts Hash[*ary.flatten]
