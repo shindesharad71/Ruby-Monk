@@ -36,3 +36,9 @@ end
 
 ary = [[4, 8], [15, 16], [23, 42]]
 puts Hash[*ary.flatten]
+
+def zen(*args)
+  [args.first, args.last]
+end
+
+p zen(42, 43, 44, 45, 46)
