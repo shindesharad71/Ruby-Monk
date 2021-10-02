@@ -6,3 +6,5 @@ puts [4, 8, 15, 16, 23, 42].length
 
 puts [42, 8, 15, 16, 23, 42].count(42)
 puts ["Jacob", "Alexandra", "Mikhail", "Karl", "Dogen", "Jacob"].count("Jacob")
+
+[4, 8, 15, 16, 23, 42].count { |e| }
