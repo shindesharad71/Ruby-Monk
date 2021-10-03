@@ -11,3 +11,6 @@ puts ["Jacob", "Alexandra", "Mikhail", "Karl", "Dogen", "Jacob"].count("Jacob")
 
 puts [4, 8, 15, 16, 23, 42].index(15)
 puts [4, 8, 15, 16, 23, 42].index { |e| e % 2 == 0 }
+
+p [4, 8, 15, 16, 23, 42].flatten
+p [4, [8], [15], [16, [23, 42]]].flatten
