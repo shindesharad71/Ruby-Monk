@@ -21,3 +21,5 @@ def zen(array)
   converted = array.compact.flatten
   converted.index(42) == 5 ? converted.count : nil
 end
+
+p [4, 8, 15, 16, 23, 42].zip([42, 23, 16, 15, 8])
