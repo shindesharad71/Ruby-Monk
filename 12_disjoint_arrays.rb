@@ -37,3 +37,14 @@ def degrassi_couples
   all = CHARACTERS.product(CHARACTERS)
   all.reject { |c| c.first == c.last }
 end
+
+class Announcements
+  def initialize(printer)
+    @printer = printer
+  end
+
+  def notify_user(column_table)
+    row_table = # batter up!
+      @printer.print_with_ink(row_table)
+  end
+end
