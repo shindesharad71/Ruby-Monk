@@ -44,3 +44,15 @@ class Bar
     self.extend Foo
   end
 end
+
+module Foo
+  def say_hi
+    puts "Hi!"
+  end
+end
+
+class Bar
+end
+
+Bar.extend Foo
+Bar.say_hi
