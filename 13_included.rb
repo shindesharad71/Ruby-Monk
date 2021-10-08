@@ -56,3 +56,17 @@ end
 
 Bar.extend Foo
 Bar.say_hi
+
+module Foo
+  module ClassMethods
+    def guitar
+      "gently weeps"
+    end
+  end
+end
+
+class Bar
+  include Foo
+end
+
+puts Bar.guitar
