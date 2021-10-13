@@ -82,3 +82,14 @@ begin
 rescue ZeroDivisionError => error
   p error
 end
+
+def zen
+  begin
+    p eval "(40 + 2) / 2"
+    p eval "(40 + 2) \ 2"
+  rescue SyntaxError => error
+    puts error.backtrace
+  end
+end
+
+zen
