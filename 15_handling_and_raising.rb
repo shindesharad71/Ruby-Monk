@@ -76,3 +76,9 @@ def string_slice(*strings)
     string.slice(0..2)
   end
 end
+
+begin
+  eval "40 / 0"
+rescue ZeroDivisionError => error
+  p error
+end
