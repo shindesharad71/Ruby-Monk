@@ -93,3 +93,15 @@ def zen
 end
 
 zen
+
+def zen
+  begin
+    p eval "(40 + 2) / 2"
+    p eval "(40 + 2) \ 2"
+    p eval "4, 8, 15, 16, 23, 42"
+  rescue SyntaxError => error
+    puts error.backtrace
+  end
+end
+
+zen
