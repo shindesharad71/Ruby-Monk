@@ -105,3 +105,14 @@ def zen
 end
 
 zen
+
+class KasayaError < StandardError
+end
+
+def robe(type)
+  unless type.downcase == "kasaya"
+    raise KasayaError, "Wrong robe!"
+  end
+
+  "Dharmaguptaka's " + type.capitalize + " Robe"
+end
