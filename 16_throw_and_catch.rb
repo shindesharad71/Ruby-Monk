@@ -48,3 +48,12 @@ candy = catch(:found) do
 end
 puts candy
 puts attempts
+
+candy = catch(:found) do
+  floor.each do |row|
+    row.each do |tile|
+      throw(:found, tile) if tile == "jawbreaker" || tile == "gummy"
+    end
+  end
+end
+puts candy
