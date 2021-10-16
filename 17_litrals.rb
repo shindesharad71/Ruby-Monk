@@ -23,3 +23,11 @@ def an_array_of_arrays
    ["so", "am", "i"],
    ["we're", "not", "even", "all", "the", "same", "size!"]]
 end
+
+def quoted_string(to_be_quoted)
+  "Suuuure. You were just \"#{to_be_quoted}\"."
+end
+
+def multi_line_string(*lines)
+  "Here are your lines!\n\n#{lines.join("\n")}"
+end
