@@ -31,3 +31,8 @@ end
 def multi_line_string(*lines)
   "Here are your lines!\n\n#{lines.join("\n")}"
 end
+
+def big_q_string(numerator, denominator)
+  %Q[This %Q syntax is the ugliest one.
+#{numerator} out of #{denominator} "dentists" agree.]
+end
