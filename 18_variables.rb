@@ -37,3 +37,19 @@ left = Foot.new
 left.i_can_haz_toes
 
 puts "in the `main` class: #{defined?(@toes).inspect}"
+
+module Somewhere
+  class Hidden
+    $everywhere = "global love"
+  end
+end
+
+module Somewhere
+  class CloseTo
+    def the_heart
+      $everywhere
+    end
+  end
+end
+
+puts Somewhere::CloseTo.new.the_heart
