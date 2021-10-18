@@ -21,3 +21,11 @@ end
 dolly = Sheep.new
 dolly.extend(fence)
 puts dolly.speak
+
+def awkward_sheep
+	sheep = Class.new do
+  	def speak
+    	"Bah."
+ 		end
+	end
+end
