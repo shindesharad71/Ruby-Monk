@@ -5,3 +5,9 @@
 [enumerator = [3, 7, 14].each
 
 enumerator.each { |e| puts e + 1 }
+
+class Array
+    def map_with_index(&block)
+      self.each_with_index.map(&block)
+    end
+end
