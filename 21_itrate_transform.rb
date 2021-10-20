@@ -9,3 +9,7 @@ def map_value
 end
 
 p map_value
+
+def hash_keys(hash)
+  hash.map { |pair| pair.first }
+end
