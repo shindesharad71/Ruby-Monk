@@ -3,3 +3,9 @@
 { :locke => "4", :hugo => "8" }.each_with_index do |kv, i|
   puts "#{kv} -- #{i}"
 end
+
+def map_value
+  [3, 7, 14, 15, 22, 41].map { |e| e + 1 }
+end
+
+p map_value
