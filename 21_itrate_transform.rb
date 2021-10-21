@@ -39,3 +39,17 @@ def occurrences(str)
     build
   end
 end
+
+class Island
+  def initialize(candidates)
+    @candidates = candidates
+  end
+
+  def survive?
+    @candidates.none? { |c| c == "Esau" }
+  end
+
+  def safe?
+    @candidates.all? { |c| c == "Jack" }
+  end
+end
