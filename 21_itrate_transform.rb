@@ -30,3 +30,5 @@ def custom_inject(array, default = nil)
 end
 
 p custom_inject([4, 8, 15, 16, 23, 42], 0)
+
+[4, 8, 15, 16, 23, 42].inject({}) { |a, i| a.update(i => i) }
