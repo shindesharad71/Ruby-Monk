@@ -13,3 +13,8 @@ p map_value
 def hash_keys(hash)
   hash.map { |pair| pair.first }
 end
+
+[4, 8, 15, 16, 23, 42].inject(0) do |accumulator, iterated|
+  accumulator += iterated
+  accumulator
+end
