@@ -14,3 +14,10 @@ f = FibonacciNumbers.new
 f.each do |fibonacci_number|
   puts "A Fibonacci number multiplied by 10: #{fibonacci_number * 10}"
 end
+
+a = "tom"
+b = "jerry"
+superheroes = [a, b]
+a = "batman"
+
+puts superheroes
