@@ -26,3 +26,8 @@ a = "tom"
 puts "#{a}, #{a.object_id}"
 a = "jerry"
 puts "#{a}, #{a.object_id}"
+
+a = "tom"
+puts "#{a}, #{a.object_id}"
+a.gsub!("tom", "jerry")
+puts "#{a}, #{a.object_id}"
