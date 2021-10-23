@@ -21,3 +21,8 @@ superheroes = [a, b]
 a = "batman"
 
 puts superheroes
+
+a = "tom"
+puts "#{a}, #{a.object_id}"
+a = "jerry"
+puts "#{a}, #{a.object_id}"
