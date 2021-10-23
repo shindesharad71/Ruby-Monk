@@ -31,3 +31,16 @@ a = "tom"
 puts "#{a}, #{a.object_id}"
 a.gsub!("tom", "jerry")
 puts "#{a}, #{a.object_id}"
+
+a = "tom"
+b = "jerry"
+superheroes = [a, b]
+puts superheroes
+
+# reassign a to a different superhero
+a = "batman"
+puts superheroes
+
+# jerry is in fact superman. who knew!
+b.gsub!("jerry", "superman")
+puts superheroes
