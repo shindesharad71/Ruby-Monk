@@ -32,3 +32,12 @@ logger.debug("(INFO) This a debug message")
 logger.unknown("(INFO) Something unknown. Oh, mystery and suspense!")
 logger.error("(INFO) Error! Run! Panic!")
 logger.warn("(INFO) This is a warning.")
+
+logger = Logger.new(STDOUT)
+logger.level = Logger::DEBUG   # lowest severity. will print all logs.
+logger.formatter = lambda do |severity, datetime, progname, msg|
+  "#{datetime}: #{msg}\n"
+end
+
+logger.warn "A warning"
+logger.info "An info"
