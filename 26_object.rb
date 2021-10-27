@@ -62,3 +62,12 @@ d = DeliveryTray.new
 d.add Soup.new; d.add Soup.new
 d.add IceCream.new
 puts d.dishes_needed # should be "2 soup bowl, 1 ice cream bowl"
+
+class A
+end
+
+class B < A
+end
+
+p A.new.instance_of?(A)
+p B.new.instance_of?(A)
