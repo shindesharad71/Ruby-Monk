@@ -12,3 +12,13 @@ class Foo
 end
 
 p Foo.new.class
+
+class Foo
+end
+
+p Foo.class
+
+# While we are at it, lets check out the classes of a few other objects
+p String.class
+p Fixnum.class
+p Array.class
