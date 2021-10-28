@@ -27,3 +27,10 @@ class Foo
 end
 
 p Foo.superclass
+
+class Foo
+end
+
+p Foo.superclass
+p Foo.superclass.superclass
+p Foo.superclass.superclass.superclass
