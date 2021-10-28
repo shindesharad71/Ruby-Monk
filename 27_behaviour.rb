@@ -22,3 +22,8 @@ end
 
 p Foo.new.shout
 p Foo.superclass
+
+class Foo
+end
+
+p Foo.superclass
