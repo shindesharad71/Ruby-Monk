@@ -49,3 +49,6 @@ class Foo < Bar
 end
 
 p Foo.superclasses  # should be [Bar, Object, BasicObject]
+
+p Object.superclass
+p Object.superclass.superclass
