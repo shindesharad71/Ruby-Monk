@@ -34,3 +34,18 @@ end
 p Foo.superclass
 p Foo.superclass.superclass
 p Foo.superclass.superclass.superclass
+
+class Object
+  def superclasses(klass = self.superclass)
+    return [] if klass.nil?
+    [klass] + superclasses(klass.superclass)
+  end
+end
+
+class Bar
+end
+
+class Foo < Bar
+end
+
+p Foo.superclasses  # should be [Bar, Object, BasicObject]
