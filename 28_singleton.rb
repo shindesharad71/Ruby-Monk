@@ -51,3 +51,14 @@ p foo.class.instance_methods.include? :shout
 
 # But does it exist in the metaclass?
 p foo.metaclass.instance_methods.include? :shout
+
+class Object
+  def metaclass
+    class << self
+      self
+    end
+  end
+end
+
+a = Object.new
+p a.metaclass.new
