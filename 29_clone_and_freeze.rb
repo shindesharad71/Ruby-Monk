@@ -21,3 +21,7 @@ bar = "bar"
 bars = [bar]
 bar.upcase!				  # this changes bar itself. the object mutates.
 p bars
+
+a = "test"
+a.freeze
+a << "change"
