@@ -5,3 +5,9 @@ class Array
 end
 
 puts [1000.0, 200.0, 50.0].foldl("/") # Feel free to experiment with this
+
+class SetInStone
+  #empty class
+end
+
+print SetInStone.new.everything_changes
