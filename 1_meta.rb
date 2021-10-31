@@ -22,4 +22,10 @@ class SetInStone
   end
 end
 
+class String
+  def words
+    split(" ")
+  end
+end
+
 print SetInStone.new.everything_changes
