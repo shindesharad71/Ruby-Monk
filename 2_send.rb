@@ -27,3 +27,13 @@ end
 nomad = Nomad.new(Glider.new)
 nomad.do("lift")
 nomad.do("bank")
+
+class Nomad
+  def initialize(glider)
+    @glider = glider
+  end
+
+  def do(action)
+    @glider.send(action)
+  end
+end
